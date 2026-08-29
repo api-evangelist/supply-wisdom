@@ -1,0 +1,21 @@
+generated: '2026-08-29'
+method: searched
+source: registry searches — npm, PyPI, RubyGems, crates.io, NuGet, Maven Central, pkg.go.dev, GitHub
+note: >-
+  NO first-party client libraries found. npm registry search for "supplywisdom" returned zero
+  packages; pypi.org/pypi/supply-wisdom/json and pypi.org/pypi/supplywisdom/json both returned 404;
+  the GitHub organisations "supplywisdom", "supply-wisdom" and "SupplyWisdom" all return 404 and a
+  GitHub repository search for "supplywisdom" returned total_count 0. Supply Wisdom links no SDK, CLI
+  or source repository from its site. No SDKs pointer is emitted — this file records an absence.
+package_count: 0
+packages: []
+registries_probed:
+- registry: npm
+  query: supplywisdom
+  result: 0 packages
+- registry: pypi
+  query: supply-wisdom / supplywisdom
+  result: 404 / 404
+- registry: github
+  query: 'orgs supplywisdom, supply-wisdom, SupplyWisdom; repo search supplywisdom'
+  result: 404 / 404 / 404; 0 repositories

@@ -1,0 +1,29 @@
+generated: '2026-08-29'
+method: searched
+source: https://www.supplywisdom.com/product
+note: >-
+  Supply Wisdom advertises webhook delivery as a notification channel on its Continuous Monitoring
+  tier — the product page reads "Email, Slack, Webhook notifications" — but publishes NO webhook
+  reference, event catalogue, payload schema, signing scheme, retry policy or AsyncAPI document
+  anywhere on a public host. This artifact records the advertised surface and the absence of its
+  contract. Nothing here is derived or invented; the event list is empty because the provider
+  publishes none.
+webhooks:
+  advertised: true
+  evidence:
+    url: https://www.supplywisdom.com/product
+    http_status: 200
+    quote: Email, Slack, Webhook notifications
+    context: Continuous Monitoring tier feature list
+  documented: false
+  asyncapi_published: false
+  events: []
+  payload_schema: null
+  signing: null
+  retry_policy: null
+  subscription_management: >-
+    Not publicly documented; notification configuration appears to live inside the tenant application
+    at app.supplywisdom.com, which requires a login.
+other_channels:
+- email
+- slack

@@ -1,0 +1,39 @@
+generated: '2026-08-29'
+method: searched
+source: https://www.supplywisdom.com/product
+plan_count: 3
+pricing_published: false
+note: >-
+  Supply Wisdom names three subscription products on its product page but publishes no price, no
+  currency, no quota and no overage for any of them. https://www.supplywisdom.com/pricing returns 404
+  and the on-page "See Pricing" controls resolve to the demo-booking flow, so every commercial term is
+  behind a sales conversation. Tier names and included capabilities below are quoted from the product
+  page; prices are null because none are published.
+plans:
+- name: Real-time Alerts
+  price: null
+  currency: null
+  period: null
+  description: >-
+    Configurable subscription delivering dynamic risk notifications with guidance and cascading-impact
+    warnings from multiple sources. A free trial is offered.
+  quota: null
+  overage: null
+- name: Comprehensive Intelligence
+  price: null
+  currency: null
+  period: quarterly or annual
+  description: >-
+    In-depth reporting on selected third parties with 12-month look-back snapshots, executive
+    summaries, trend analysis and impact news alerts.
+  quota: null
+  overage: null
+- name: Continuous Monitoring
+  price: null
+  currency: null
+  period: null
+  description: >-
+    Ongoing real-time coverage with expert guidance, AI-driven auto actions, configurable dashboards
+    and email, Slack and webhook notifications; integrates into an existing GRC solution.
+  quota: null
+  overage: null

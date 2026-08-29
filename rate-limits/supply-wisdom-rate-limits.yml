@@ -1,0 +1,11 @@
+generated: '2026-08-29'
+method: searched
+source: https://www.supplywisdom.com/sitemap.xml
+limit_count: 0
+note: >-
+  No published rate limits. Supply Wisdom operates no public developer portal or API reference — the
+  222-URL sitemap contains zero developer, API or documentation pages — so there is no documented
+  scope, window, limit, burst, exhaustion status code or RateLimit-* response header to record. Not a
+  finding that limits are absent from the product, only that none are published.
+rate_limits: []
+headers: []

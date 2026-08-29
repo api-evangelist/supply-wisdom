@@ -1,0 +1,36 @@
+generated: '2026-08-29'
+method: searched
+source: https://supplywisdom.trust.site + https://www.supplywisdom.com/dora
+note: >-
+  No machine-readable contract is published by Supply Wisdom, so no standard could be derived from a
+  spec. Every entry below is read from a published page, and every negative is an honest "not
+  observable" rather than a claim the provider fails it.
+standards:
+- id: soc2
+  conforms: true
+  evidence: 'Trust center lists SOC 2 — Compliant: https://supplywisdom.trust.site'
+- id: iso-27001
+  conforms: true
+  evidence: 'Trust center lists ISO 27001 — Compliant: https://supplywisdom.trust.site'
+- id: gdpr
+  conforms: true
+  evidence: 'Trust center lists GDPR — Compliant: https://supplywisdom.trust.site'
+- id: oauth2
+  conforms: false
+  evidence: No public securityScheme, OAuth metadata document, or auth reference published.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration returns the SPA catch-all shell on every host, not a document.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public contract or error reference to read.
+domain_standards:
+- id: dora
+  name: EU Digital Operational Resilience Act (Regulation (EU) 2022/2554)
+  conforms: null
+  role: subject-matter
+  evidence: >-
+    https://www.supplywisdom.com/dora — Supply Wisdom markets DORA third-party/ICT-provider oversight
+    as a use case its intelligence supports. This is a product positioning page, NOT a declaration
+    that a Supply Wisdom contract implements a DORA data standard, and it is recorded as such.
+  scored: false

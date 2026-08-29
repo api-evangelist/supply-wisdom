@@ -1,0 +1,32 @@
+generated: '2026-08-29'
+method: searched
+source: https://supplywisdom.trust.site
+trust_center:
+  url: https://supplywisdom.trust.site
+  platform: Sprinto
+  http_status: 200
+  public: true
+  access_model: >-
+    Control summaries and certification status are public; underlying reports and evidence are behind
+    a "Request access" form.
+certifications:
+- name: SOC 2
+  status: Compliant
+  source: https://supplywisdom.trust.site
+- name: ISO 27001
+  status: Compliant
+  source: https://supplywisdom.trust.site
+- name: GDPR
+  status: Compliant
+  source: https://supplywisdom.trust.site
+control_domains:
+- product security
+- data security (MFA, encryption at rest)
+- network security
+- application security
+- endpoint security
+- corporate security policies
+documents_public: false
+note: >-
+  No named security contact, responsible-disclosure policy, or subprocessor list is published on the
+  trust center; /.well-known/security.txt on the trust host returns 403.

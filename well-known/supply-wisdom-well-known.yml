@@ -1,0 +1,81 @@
+generated: '2026-08-29'
+method: probed
+source: live GET of /.well-known/* on every Supply Wisdom host
+note: >-
+  NO HIT. Every /.well-known/ path on api.supplywisdom.com and app.supplywisdom.com returned HTTP 200
+  with the identical 4,689-byte React single-page-app shell — including a nonsense control path — so
+  those 200s are a catch-all, not documents. www.supplywisdom.com (a Framer-hosted marketing site)
+  returns real 404s for every path. Nothing was saved and NO WellKnown or SecurityTxt pointer is
+  emitted; this file records an absence.
+hit_count: 0
+soft_404_control:
+  hosts:
+  - host: https://api.supplywisdom.com
+    path: /this-path-should-not-exist-xyz123
+    status: 200
+    bytes: 4689
+    content_type: text/html; charset=UTF-8
+  - host: https://app.supplywisdom.com
+    path: /control-xyz-404-test
+    status: 200
+    bytes: 4689
+    content_type: text/html; charset=UTF-8
+  - host: https://www.supplywisdom.com
+    path: /this-path-should-not-exist-xyz123
+    status: 404
+    bytes: 350239
+hosts:
+- host: https://www.supplywisdom.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://api.supplywisdom.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: SPA catch-all shell, not a document — not counted
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: SPA catch-all shell, not a document — not counted
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: SPA catch-all shell, not a document — not counted
+  - path: /.well-known/api-catalog
+    status: 200
+    note: SPA catch-all shell, not a document — not counted
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: SPA catch-all shell, not a document — not counted
+- host: https://app.supplywisdom.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: SPA catch-all shell, not a document — not counted
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: SPA catch-all shell, not a document — not counted
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: SPA catch-all shell, not a document — not counted
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    note: SPA catch-all shell, not a document — not counted
+  - path: /.well-known/api-catalog
+    status: 200
+    note: SPA catch-all shell, not a document — not counted
+- host: https://supplywisdom.trust.site
+  documents:
+  - path: /.well-known/security.txt
+    status: 403

@@ -1,17 +1,35 @@
 aid: supply-wisdom
 name: Supply Wisdom
-description: 'Supply Wisdom is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Supply Wisdom is a third-party and location risk intelligence SaaS platform that continuously
+  monitors suppliers, vendors and operating locations across financial, cyber, compliance, ESG,
+  operational, nth-party and geopolitical risk domains. The product is sold in three subscription
+  shapes — Real-time Alerts, Comprehensive Intelligence (in-depth reports across 350+ risk metrics
+  with 12-month look-back snapshots) and Continuous Monitoring (real-time coverage with AI-driven
+  auto actions, configurable dashboards, and email, Slack and webhook notifications) — and is
+  positioned to feed an organisation's existing GRC stack rather than replace it, with named
+  partnerships into Archer, Aravo, Certa, IBM OpenPages, OneTrust, Black Kite, Fusion Risk
+  Management and SecurityScorecard. The platform itself is a tenant application at
+  app.supplywisdom.com; no public developer portal, API reference or machine-readable contract is
+  published on any Supply Wisdom host.
 url: https://raw.githubusercontent.com/api-evangelist/supply-wisdom/refs/heads/main/apis.yml
+image: https://framerusercontent.com/images/7wsvue431VgrTWr0Lbz2EG1OsE.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-29'
 modified: '2026-08-29'
 tags:
 - Company
+- Risk
+- Third-Party Risk Management
+- Supply Chain
+- Governance Risk and Compliance
+- Monitoring
+- Intelligence
+- Supplier Risk
+- Operational Resilience
+- ESG
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,71 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/supply-wisdom-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.supplywisdom.com/
+- type: Documentation
+  url: https://www.supplywisdom.com/product
+- type: Support
+  url: https://www.supplywisdom.com/contact
+- type: Blog
+  url: https://www.supplywisdom.com/resources
+- type: Login
+  url: https://app.supplywisdom.com/dashboard
+- type: SignUp
+  url: https://www.supplywisdom.com/book-demo
+- type: TermsOfService
+  url: https://www.supplywisdom.com/terms
+- type: PrivacyPolicy
+  url: https://www.supplywisdom.com/privacy-policy
+- type: TrustCenter
+  url: https://supplywisdom.trust.site
+- type: Compliance
+  url: https://supplywisdom.trust.site
+- type: LinkedIn
+  url: https://www.linkedin.com/company/supplywisdom
+- type: WellKnownProbe
+  url: well-known/supply-wisdom-well-known.yml
+- type: Conformance
+  url: conformance/supply-wisdom-conformance.yml
+- type: Plans
+  url: plans/supply-wisdom-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/supply-wisdom-rate-limits.yml
+- type: Webhooks
+  url: asyncapi/supply-wisdom-webhooks.yml
+- type: Packages
+  url: packages/supply-wisdom-packages.yml
+- type: Lifecycle
+  url: lifecycle/supply-wisdom-lifecycle.yml
+- type: LLMsTxt
+  url: llms/supply-wisdom-llms.txt
+x-enrichment:
+  date: '2026-08-29'
+  status: minimal
+  artifacts_added: 10
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: >-
+    Supply Wisdom's entire platform is the tenant app at app.supplywisdom.com — the 222-URL sitemap on
+    www.supplywisdom.com contains no developer, API or documentation page, docs.supplywisdom.com does
+    not resolve, and the product page advertises webhook notifications and "fully integrated into your
+    GRC solution" while publishing no reference, payload schema or spec for either, so the entire
+    integration surface is reachable only from inside a paid tenant.
+  evidence:
+  - url: https://www.supplywisdom.com/product
+    status: 200
+  - url: https://www.supplywisdom.com/sitemap.xml
+    status: 200
+  - url: https://api.supplywisdom.com/openapi.json
+    status: 200
+  - url: https://api.supplywisdom.com/this-path-should-not-exist-xyz123
+    status: 200
+  - url: https://www.supplywisdom.com/openapi.json
+    status: 404
+  - url: https://app.supplywisdom.com/dashboard
+    status: 200
+  checked: '2026-08-29'

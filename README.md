@@ -64,5 +64,10 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Supply Wisdom is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Supply Wisdom is a third-party and location risk intelligence SaaS platform that continuously monitors suppliers, vendors and operating locations across financial, cyber, compliance, ESG, operational, nth-party and geopolitical risk domains. It is sold as three subscriptions — Real-time Alerts, Comprehensive Intelligence and Continuous Monitoring — and is positioned to feed an organisation's existing GRC stack, with named partnerships into Archer, Aravo, Certa, IBM OpenPages, OneTrust, Black Kite, Fusion Risk Management and SecurityScorecard.
+
+**No public API surface.** As of 2026-08-29 Supply Wisdom publishes no developer portal, no API reference and no machine-readable contract (OpenAPI, GraphQL SDL, AsyncAPI, Protobuf, WSDL, MCP or A2A agent card) on any host it controls. The product page advertises webhook notifications and GRC integration, but neither is documented publicly — the integration surface is reachable only from inside the tenant application. See `x-coverage` in `apis.yml`.
+
+- https://www.supplywisdom.com/
+- https://app.supplywisdom.com/dashboard
+- https://supplywisdom.trust.site

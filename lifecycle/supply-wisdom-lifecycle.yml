@@ -1,0 +1,25 @@
+generated: '2026-08-29'
+method: searched
+source: https://www.supplywisdom.com/sitemap.xml + host probes
+note: >-
+  Recorded absence. Supply Wisdom publishes no API versioning policy, no deprecation policy, no
+  Sunset/Deprecation header commitment (RFC 8594), no SLA page and no status page. status.supplywisdom.com
+  does not resolve (DNS failure) and supplywisdom.statuspage.io 302s to the generic statuspage.io
+  marketing site, i.e. no tenant exists. No StatusPage or Deprecation pointer is emitted.
+versioning:
+  scheme: null
+  policy_url: null
+deprecation:
+  policy_url: null
+  sunset_header: null
+  deprecated_operations: []
+sla:
+  url: null
+status_page:
+  url: null
+  probes:
+  - url: https://status.supplywisdom.com
+    status: '000 (DNS does not resolve)'
+  - url: https://supplywisdom.statuspage.io
+    status: 302
+    redirect: https://www.statuspage.io/
