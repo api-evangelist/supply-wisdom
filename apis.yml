@@ -13,6 +13,20 @@ description: >-
   app.supplywisdom.com; no public developer portal, API reference or machine-readable contract is
   published on any Supply Wisdom host.
 url: https://raw.githubusercontent.com/api-evangelist/supply-wisdom/refs/heads/main/apis.yml
+accessModel:
+  pricing: free-trial
+  onboarding: unknown
+  trial: true
+  try_now: false
+  public: false
+  label: Free trial
+  confidence: medium
+  source:
+  - plans
+  - rate-limits
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://framerusercontent.com/images/7wsvue431VgrTWr0Lbz2EG1OsE.png
 x-type: company
 x-source: harvest:secondary-market
