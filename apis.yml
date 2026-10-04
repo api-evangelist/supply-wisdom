@@ -35,12 +35,21 @@ created: '2026-08-29'
 modified: '2026-08-29'
 tags:
 - Company
+- Risk Management
+- Third-Party Risk Management
+- Supply Chain
+- Governance Risk and Compliance
+- Monitoring
+- Supplier Risk
+- Operational Resilience
+- ESG
+tags_raw:
+- Company
 - Risk
 - Third-Party Risk Management
 - Supply Chain
 - Governance Risk and Compliance
 - Monitoring
-- Intelligence
 - Supplier Risk
 - Operational Resilience
 - ESG
@@ -119,3 +128,5 @@ x-coverage:
   - url: https://app.supplywisdom.com/dashboard
     status: 200
   checked: '2026-08-29'
+x-tags-removed:
+- Intelligence
