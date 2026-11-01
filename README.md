@@ -64,10 +64,109 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Supply Wisdom is a third-party and location risk intelligence SaaS platform that continuously monitors suppliers, vendors and operating locations across financial, cyber, compliance, ESG, operational, nth-party and geopolitical risk domains. It is sold as three subscriptions — Real-time Alerts, Comprehensive Intelligence and Continuous Monitoring — and is positioned to feed an organisation's existing GRC stack, with named partnerships into Archer, Aravo, Certa, IBM OpenPages, OneTrust, Black Kite, Fusion Risk Management and SecurityScorecard.
+Supply Wisdom is a third-party and location risk intelligence SaaS platform that continuously monitors suppliers, vendors and operating locations across financial, cyber, compliance, ESG, operational, nth-party and geopolitical risk domains. The product is sold in three subscription shapes — Real-time Alerts, Comprehensive Intelligence (in-depth reports across 350+ risk metrics with 12-month look-back snapshots) and Continuous Monitoring (real-time coverage with AI-driven auto actions, configurable dashboards, and email, Slack and webhook notifications) — and is positioned to feed an organisation's existing GRC stack rather than replace it, with named partnerships into Archer, Aravo, Certa, IBM OpenPages, OneTrust, Black Kite, Fusion Risk Management and SecurityScorecard. The platform itself is a tenant application at app.supplywisdom.com; no public developer portal, API reference or machine-readable contract is published on any Supply Wisdom host.
 
-**No public API surface.** As of 2026-08-29 Supply Wisdom publishes no developer portal, no API reference and no machine-readable contract (OpenAPI, GraphQL SDL, AsyncAPI, Protobuf, WSDL, MCP or A2A agent card) on any host it controls. The product page advertises webhook notifications and GRC integration, but neither is documented publicly — the integration surface is reachable only from inside the tenant application. See `x-coverage` in `apis.yml`.
+**Areas:** Company · Risk Management · Third-Party Risk Management · Supply Chain · Governance Risk and Compliance · Monitoring · Supplier Risk · Operational Resilience · ESG
 
-- https://www.supplywisdom.com/
-- https://app.supplywisdom.com/dashboard
-- https://supplywisdom.trust.site
+## Supply Wisdom on APIs.io
+
+Everything profiled for Supply Wisdom is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/supply-wisdom/](https://apis.io/providers/supply-wisdom/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Supply Wisdom Webhooks](https://apis.io/asyncapis/supply-wisdom/supply-wisdom-webhooks/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Supply Wisdom Domain Security](https://apis.io/security/supply-wisdom/supply-wisdom-domain-security/)
+- [Supply Wisdom Trust Center](https://apis.io/security/supply-wisdom/supply-wisdom-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Supply Wisdom Plans Pricing](https://apis.io/plans/supply-wisdom/supply-wisdom-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Supply Wisdom Rate Limits](https://apis.io/rate-limits/supply-wisdom/supply-wisdom-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.supplywisdom.com/)
+- [Documentation](https://www.supplywisdom.com/product)
+- [Pricing](https://www.supplywisdom.com/product)
+- [Sign up](https://www.supplywisdom.com/book-demo)
+- [Support](https://www.supplywisdom.com/contact)
+- [Blog](https://www.supplywisdom.com/resources)
+- [Compliance](https://supplywisdom.trust.site)
+- [Trust centre](https://supplywisdom.trust.site)
+- [Terms of service](https://www.supplywisdom.com/terms)
+- [Privacy policy](https://www.supplywisdom.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 40.8** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 92.1 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 23.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/supply-wisdom/](https://apis.io/providers/supply-wisdom/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Supply Wisdom: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/supply-wisdom/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
